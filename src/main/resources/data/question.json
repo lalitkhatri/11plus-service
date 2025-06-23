@@ -1,0 +1,1698 @@
+[
+  {
+    "questionText": "Question 1: Which of the following words is the odd one out?",
+    "options": ["Courage", "Bravery", "Valor", "Cowardice"],
+    "correctAnswer": "Cowardice",
+    "explanation": "While courage, bravery, and valor indicate positive attributes, cowardice is its opposite.",
+    "tags": ["verbal reasoning", "odd one out", "vocabulary"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Question 2: Choose the synonym for 'Obstinate'.",
+    "options": ["Flexible", "Stubborn", "Compliant", "Yielding"],
+    "correctAnswer": "Stubborn",
+    "explanation": "'Obstinate' means stubborn and resistant to change.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 3: Select the antonym of 'Abundant'.",
+    "options": ["Limited", "Plentiful", "Copious", "Ample"],
+    "correctAnswer": "Limited",
+    "explanation": "'Abundant' means plentiful, so the antonym is 'Limited'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 4: Which word best completes the analogy: 'Bird is to Sky as Fish is to ____'?",
+    "options": ["Water", "Land", "Air", "Desert"],
+    "correctAnswer": "Water",
+    "explanation": "Fish live in water, just as birds fly in the sky.",
+    "tags": ["verbal reasoning", "analogy", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 5: Identify the misspelled word.",
+    "options": ["Accommodate", "Definately", "Occurrence", "Recommend"],
+    "correctAnswer": "Definately",
+    "explanation": "The word 'Definately' is misspelled; it should be 'Definitely'.",
+    "tags": ["verbal reasoning", "spelling", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 6: Which of the following words means 'to lessen'?",
+    "options": ["Increase", "Diminish", "Augment", "Expand"],
+    "correctAnswer": "Diminish",
+    "explanation": "'Diminish' means to make or become less.",
+    "tags": ["verbal reasoning", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 7: What is the synonym for 'Rapid'?",
+    "options": ["Slow", "Quick", "Gradual", "Leisurely"],
+    "correctAnswer": "Quick",
+    "explanation": "'Rapid' means fast, which is synonymous with 'Quick'.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 8: Select the antonym of 'Transparent'.",
+    "options": ["Clear", "Opaque", "Lucid", "Translucent"],
+    "correctAnswer": "Opaque",
+    "explanation": "'Opaque' means not transparent.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 9: Find the word that does not belong.",
+    "options": ["Apple", "Banana", "Carrot", "Grape"],
+    "correctAnswer": "Carrot",
+    "explanation": "'Carrot' is a vegetable, while the others are fruits.",
+    "tags": ["verbal reasoning", "odd one out", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 10: Choose the correct homophone for 'Sea'.",
+    "options": ["See", "C", "Si", "Sigh"],
+    "correctAnswer": "See",
+    "explanation": "The word 'See' sounds like 'Sea'.",
+    "tags": ["verbal reasoning", "homophone", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 11: Which of the following is a synonym for 'Benevolent'?",
+    "options": ["Cruel", "Kind", "Mean", "Harsh"],
+    "correctAnswer": "Kind",
+    "explanation": "'Benevolent' means kind and well-meaning.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Question 12: Select the antonym of 'Ancient'.",
+    "options": ["Old", "Modern", "Antique", "Historic"],
+    "correctAnswer": "Modern",
+    "explanation": "'Ancient' means very old; the antonym is 'Modern'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 13: What is the synonym for 'Eloquent'?",
+    "options": ["Inarticulate", "Fluent", "Mumbled", "Quiet"],
+    "correctAnswer": "Fluent",
+    "explanation": "'Eloquent' means expressing oneself clearly and effectively.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Question 14: Choose the correct word to complete the analogy: 'Knife is to Cut as Pen is to ____'.",
+    "options": ["Write", "Draw", "Erase", "Cut"],
+    "correctAnswer": "Write",
+    "explanation": "A pen is used to write, just as a knife is used to cut.",
+    "tags": ["verbal reasoning", "analogy", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 15: Identify the misspelled word.",
+    "options": ["Occasion", "Embarrass", "Maintainance", "Commitment"],
+    "correctAnswer": "Maintainance",
+    "explanation": "The correct spelling is 'Maintenance'.",
+    "tags": ["verbal reasoning", "spelling", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 16: Which of the following words means 'excessively talkative'?",
+    "options": ["Taciturn", "Loquacious", "Reserved", "Quiet"],
+    "correctAnswer": "Loquacious",
+    "explanation": "'Loquacious' means very talkative.",
+    "tags": ["verbal reasoning", "vocabulary"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Question 17: Select the antonym of 'Scarce'.",
+    "options": ["Rare", "Abundant", "Sparse", "Limited"],
+    "correctAnswer": "Abundant",
+    "explanation": "'Scarce' means in short supply; the antonym is 'Abundant'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 18: What is the synonym for 'Perplex'?",
+    "options": ["Clarify", "Confuse", "Simplify", "Illuminate"],
+    "correctAnswer": "Confuse",
+    "explanation": "'Perplex' means to confuse or puzzle.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Question 19: Find the word that does not belong.",
+    "options": ["Circle", "Square", "Triangle", "Sphere"],
+    "correctAnswer": "Sphere",
+    "explanation": "Circle, square, and triangle are 2D shapes; sphere is a 3D shape.",
+    "tags": ["verbal reasoning", "odd one out", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 20: Choose the correct homophone for 'Night'.",
+    "options": ["Knight", "Nite", "Right", "Light"],
+    "correctAnswer": "Knight",
+    "explanation": "The word 'Knight' is the homophone for 'Night'.",
+    "tags": ["verbal reasoning", "homophone", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 21: Which of the following is a synonym for 'Frugal'?",
+    "options": ["Wasteful", "Economical", "Extravagant", "Lavish"],
+    "correctAnswer": "Economical",
+    "explanation": "'Frugal' means economical or sparing with money.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Question 22: Select the antonym of 'Optimistic'.",
+    "options": ["Hopeful", "Pessimistic", "Positive", "Upbeat"],
+    "correctAnswer": "Pessimistic",
+    "explanation": "'Optimistic' means hopeful; the opposite is 'Pessimistic'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 23: What is the synonym for 'Vast'?",
+    "options": ["Small", "Huge", "Tiny", "Limited"],
+    "correctAnswer": "Huge",
+    "explanation": "'Vast' means very large; synonymous with 'Huge'.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 24: Choose the correct word to complete the analogy: 'Fire is to Heat as Ice is to ____'.",
+    "options": ["Cold", "Melting", "Freeze", "Boil"],
+    "correctAnswer": "Cold",
+    "explanation": "Ice is associated with cold.",
+    "tags": ["verbal reasoning", "analogy", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 25: Identify the misspelled word.",
+    "options": ["Necessary", "Definately", "Occasionally", "Perseverance"],
+    "correctAnswer": "Definately",
+    "explanation": "The word 'Definately' is misspelled; it should be 'Definitely'.",
+    "tags": ["verbal reasoning", "spelling", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 26: Which of the following words means 'to verify'?",
+    "options": ["Assume", "Confirm", "Deny", "Refute"],
+    "correctAnswer": "Confirm",
+    "explanation": "'Confirm' means to establish the truth or correctness of something.",
+    "tags": ["verbal reasoning", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 27: Select the antonym of 'Bland'.",
+    "options": ["Dull", "Vivid", "Uninteresting", "Monotonous"],
+    "correctAnswer": "Vivid",
+    "explanation": "'Bland' means lacking strong features; its opposite is 'Vivid'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Question 28: What is the synonym for 'Resilient'?",
+    "options": ["Fragile", "Tough", "Brittle", "Delicate"],
+    "correctAnswer": "Tough",
+    "explanation": "'Resilient' means able to recover quickly; synonymous with 'Tough'.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Question 29: Find the word that does not belong.",
+    "options": ["Red", "Blue", "Green", "Circle"],
+    "correctAnswer": "Circle",
+    "explanation": "Red, blue, and green are colors; 'Circle' is a shape.",
+    "tags": ["verbal reasoning", "odd one out", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 30: Choose the correct homophone for 'Peak'.",
+    "options": ["Peek", "Pique", "Peak", "Peal"],
+    "correctAnswer": "Peek",
+    "explanation": "'Peek' sounds like 'Peak' and means to glance quickly.",
+    "tags": ["verbal reasoning", "homophone", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 31: Which of the following is a synonym for 'Melancholy'?",
+    "options": ["Happy", "Sad", "Joyful", "Elated"],
+    "correctAnswer": "Sad",
+    "explanation": "'Melancholy' means a deep, persistent sadness.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 32: Select the antonym of 'Fortunate'.",
+    "options": ["Lucky", "Blessed", "Unlucky", "Favored"],
+    "correctAnswer": "Unlucky",
+    "explanation": "'Fortunate' means lucky; the opposite is 'Unlucky'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 33: What is the synonym for 'Obscure'?",
+    "options": ["Clear", "Vague", "Evident", "Obvious"],
+    "correctAnswer": "Vague",
+    "explanation": "'Obscure' means not clearly expressed, similar to 'Vague'.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Question 34: Choose the correct word to complete the analogy: 'Pen is to Writer as Brush is to ____'.",
+    "options": ["Artist", "Carpenter", "Chef", "Doctor"],
+    "correctAnswer": "Artist",
+    "explanation": "A brush is used by an artist, just as a pen is used by a writer.",
+    "tags": ["verbal reasoning", "analogy", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 35: Identify the misspelled word.",
+    "options": ["Occurrence", "Separate", "Recommend", "Febuary"],
+    "correctAnswer": "Febuary",
+    "explanation": "The correct spelling is 'February'.",
+    "tags": ["verbal reasoning", "spelling", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 36: Which of the following words means 'to increase'?",
+    "options": ["Decrease", "Amplify", "Reduce", "Minimize"],
+    "correctAnswer": "Amplify",
+    "explanation": "'Amplify' means to increase in size or volume.",
+    "tags": ["verbal reasoning", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 37: Select the antonym of 'Rigid'.",
+    "options": ["Flexible", "Inflexible", "Stiff", "Hard"],
+    "correctAnswer": "Flexible",
+    "explanation": "'Rigid' means stiff or inflexible; the antonym is 'Flexible'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 38: What is the synonym for 'Innovative'?",
+    "options": ["Conventional", "Creative", "Banal", "Mundane"],
+    "correctAnswer": "Creative",
+    "explanation": "'Innovative' means featuring new methods; synonymous with 'Creative'.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Question 39: Find the word that does not belong.",
+    "options": ["Monday", "Tuesday", "January", "Friday"],
+    "correctAnswer": "January",
+    "explanation": "Monday, Tuesday, and Friday are days of the week; January is a month.",
+    "tags": ["verbal reasoning", "odd one out", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 40: Choose the correct homophone for 'Air'.",
+    "options": ["Heir", "Err", "O'er", "Aire"],
+    "correctAnswer": "Heir",
+    "explanation": "'Heir' sounds like 'Air' and means someone who inherits.",
+    "tags": ["verbal reasoning", "homophone", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 41: Which of the following is a synonym for 'Obsolete'?",
+    "options": ["Modern", "Outdated", "Contemporary", "Current"],
+    "correctAnswer": "Outdated",
+    "explanation": "'Obsolete' means no longer in use; synonymous with 'Outdated'.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Question 42: Select the antonym of 'Fragile'.",
+    "options": ["Delicate", "Brittle", "Robust", "Weak"],
+    "correctAnswer": "Robust",
+    "explanation": "'Fragile' means easily broken; the opposite is 'Robust'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 43: What is the synonym for 'Genuine'?",
+    "options": ["Fake", "Authentic", "Counterfeit", "Imitation"],
+    "correctAnswer": "Authentic",
+    "explanation": "'Genuine' means real or authentic.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 44: Choose the correct word to complete the analogy: 'Pencil is to Write as Brush is to ____'.",
+    "options": ["Paint", "Draw", "Erase", "Sketch"],
+    "correctAnswer": "Paint",
+    "explanation": "A brush is used for painting, analogous to a pencil used for writing.",
+    "tags": ["verbal reasoning", "analogy", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 45: Identify the misspelled word.",
+    "options": ["Maintenance", "Bizarre", "Embarrassment", "Occassion"],
+    "correctAnswer": "Occassion",
+    "explanation": "The correct spelling is 'occasion'.",
+    "tags": ["verbal reasoning", "spelling", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 46: Which of the following words means 'to diminish'?",
+    "options": ["Increase", "Shrink", "Expand", "Grow"],
+    "correctAnswer": "Shrink",
+    "explanation": "'Shrink' means to decrease in size.",
+    "tags": ["verbal reasoning", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 47: Select the antonym of 'Vivid'.",
+    "options": ["Bright", "Dull", "Lively", "Colorful"],
+    "correctAnswer": "Dull",
+    "explanation": "'Vivid' means bright and intense; the opposite is 'Dull'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 48: What is the synonym for 'Eminent'?",
+    "options": ["Notable", "Unknown", "Obscure", "Insignificant"],
+    "correctAnswer": "Notable",
+    "explanation": "'Eminent' means famous and respected; synonymous with 'Notable'.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Question 49: Find the word that does not belong.",
+    "options": ["Car", "Bus", "Train", "Apple"],
+    "correctAnswer": "Apple",
+    "explanation": "Car, bus, and train are modes of transport; 'Apple' is not.",
+    "tags": ["verbal reasoning", "odd one out", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 50: Choose the correct homophone for 'Break'.",
+    "options": ["Brake", "Breach", "Brook", "Break"],
+    "correctAnswer": "Brake",
+    "explanation": "'Brake' sounds like 'Break' and refers to a device for slowing down vehicles.",
+    "tags": ["verbal reasoning", "homophone", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 51: Select the synonym for 'Arduous'.",
+    "options": ["Easy", "Simple", "Strenuous", "Effortless"],
+    "correctAnswer": "Strenuous",
+    "explanation": "'Arduous' means requiring great effort or strenuous work.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Question 52: Select the antonym for 'Benevolent'.",
+    "options": ["Kind", "Malevolent", "Charitable", "Compassionate"],
+    "correctAnswer": "Malevolent",
+    "explanation": "'Benevolent' means kind and charitable; its opposite is 'Malevolent', meaning harmful or evil.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 53: Identify the odd one out among these items.",
+    "options": ["Dog", "Cat", "Elephant", "Car"],
+    "correctAnswer": "Car",
+    "explanation": "Dog, Cat, and Elephant are animals, while Car is not.",
+    "tags": ["verbal reasoning", "odd one out", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 54: Which word is a homophone for 'Pair'?",
+    "options": ["Pear", "Pare", "Payer", "Peir"],
+    "correctAnswer": "Pear",
+    "explanation": "'Pear' is pronounced the same as 'Pair'.",
+    "tags": ["verbal reasoning", "homophone", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 55: Choose the word that best completes the analogy: 'Cup is to Drink as Book is to ____'.",
+    "options": ["Read", "Write", "Listen", "Cook"],
+    "correctAnswer": "Read",
+    "explanation": "A cup is used for drinking; similarly, a book is used for reading.",
+    "tags": ["verbal reasoning", "analogy", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 56: Identify the misspelled word.",
+    "options": ["Accommodate", "Definately", "Separate", "Occurrence"],
+    "correctAnswer": "Definately",
+    "explanation": "The word 'Definately' is misspelled; the correct spelling is 'Definitely'.",
+    "tags": ["verbal reasoning", "spelling", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 57: Select the synonym for 'Rapid'.",
+    "options": ["Slow", "Fast", "Lethargic", "Delayed"],
+    "correctAnswer": "Fast",
+    "explanation": "'Rapid' means very fast or quick.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 58: Select the antonym of 'Opaque'.",
+    "options": ["Transparent", "Dark", "Murky", "Dull"],
+    "correctAnswer": "Transparent",
+    "explanation": "'Opaque' means not transparent; its opposite is 'Transparent'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 59: Which word does not belong with the others?",
+    "options": ["Banana", "Apple", "Tomato", "Carrot"],
+    "correctAnswer": "Carrot",
+    "explanation": "'Carrot' is a vegetable, whereas banana, apple, and tomato are commonly classified as fruits.",
+    "tags": ["verbal reasoning", "odd one out", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 60: Choose the correct homophone for 'Right'.",
+    "options": ["Write", "Rite", "Wright", "All of the above"],
+    "correctAnswer": "All of the above",
+    "explanation": "All listed words (Write, Rite, and Wright) are pronounced like 'Right'.",
+    "tags": ["verbal reasoning", "homophone", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 61: Select the synonym for 'Garrulous'.",
+    "options": ["Talkative", "Quiet", "Reserved", "Taciturn"],
+    "correctAnswer": "Talkative",
+    "explanation": "'Garrulous' describes someone who is excessively talkative.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Question 62: Select the antonym for 'Verbose'.",
+    "options": ["Terse", "Wordy", "Longwinded", "Rambling"],
+    "correctAnswer": "Terse",
+    "explanation": "'Verbose' means using too many words; 'Terse' means brief and to the point.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Question 63: Find the odd one out among these shapes.",
+    "options": ["Square", "Circle", "Triangle", "Cube"],
+    "correctAnswer": "Cube",
+    "explanation": "Square, Circle, and Triangle are 2D shapes, whereas Cube is a 3D shape.",
+    "tags": ["verbal reasoning", "odd one out", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 64: Choose the homophone for 'Air'.",
+    "options": ["Heir", "Err", "Ere", "Are"],
+    "correctAnswer": "Heir",
+    "explanation": "'Heir' is pronounced the same as 'Air'.",
+    "tags": ["verbal reasoning", "homophone", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 65: Select the synonym for 'Melodious'.",
+    "options": ["Discordant", "Harmonious", "Cacophonous", "Jarring"],
+    "correctAnswer": "Harmonious",
+    "explanation": "'Melodious' means having a pleasant sound, much like 'Harmonious'.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 66: Select the antonym of 'Ancient'.",
+    "options": ["Modern", "Old", "Archaic", "Antique"],
+    "correctAnswer": "Modern",
+    "explanation": "'Ancient' means very old; its opposite is 'Modern'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 67: Identify the misspelled word.",
+    "options": ["Necessary", "Calender", "Occasion", "Recommend"],
+    "correctAnswer": "Calender",
+    "explanation": "The correct spelling is 'Calendar', so 'Calender' is misspelled.",
+    "tags": ["verbal reasoning", "spelling", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 68: Which word best completes the analogy: 'Pen is to Ink as Brush is to ____'.",
+    "options": ["Paint", "Water", "Paper", "Easel"],
+    "correctAnswer": "Paint",
+    "explanation": "A brush is used with paint just as a pen is used with ink.",
+    "tags": ["verbal reasoning", "analogy", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 69: Select the synonym for 'Obscure'.",
+    "options": ["Clear", "Vague", "Bright", "Evident"],
+    "correctAnswer": "Vague",
+    "explanation": "'Obscure' means not clear or vague.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Question 70: Select the antonym of 'Sturdy'.",
+    "options": ["Robust", "Fragile", "Strong", "Durable"],
+    "correctAnswer": "Fragile",
+    "explanation": "'Sturdy' means strong and robust; its opposite is 'Fragile'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 71: Find the word that does not belong.",
+    "options": ["Monday", "Tuesday", "June", "Friday"],
+    "correctAnswer": "June",
+    "explanation": "Monday, Tuesday, and Friday are days of the week; June is a month.",
+    "tags": ["verbal reasoning", "odd one out", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 72: Choose the correct homophone for 'Sole'.",
+    "options": ["Soul", "Seoul", "Sole", "All of the above"],
+    "correctAnswer": "All of the above",
+    "explanation": "All options (Soul, Seoul, Sole) are pronounced similarly to 'Sole'.",
+    "tags": ["verbal reasoning", "homophone", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 73: Select the synonym for 'Innovative'.",
+    "options": ["Conventional", "Creative", "Ordinary", "Banal"],
+    "correctAnswer": "Creative",
+    "explanation": "'Innovative' means creative or original.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Question 74: Select the antonym of 'Plentiful'.",
+    "options": ["Scarce", "Abundant", "Copious", "Ample"],
+    "correctAnswer": "Scarce",
+    "explanation": "'Plentiful' means abundant; the antonym is 'Scarce'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 75: Which word is the odd one out?",
+    "options": ["Rose", "Tulip", "Daisy", "Car"],
+    "correctAnswer": "Car",
+    "explanation": "Rose, Tulip, and Daisy are flowers, while Car is not.",
+    "tags": ["verbal reasoning", "odd one out", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 76: Choose the homophone for 'Peak'.",
+    "options": ["Peek", "Pique", "Peck", "All of the above"],
+    "correctAnswer": "Peek",
+    "explanation": "'Peek' is a homophone of 'Peak', meaning to glance quickly.",
+    "tags": ["verbal reasoning", "homophone", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 77: Select the synonym for 'Candid'.",
+    "options": ["Honest", "Deceitful", "Evasive", "Insincere"],
+    "correctAnswer": "Honest",
+    "explanation": "'Candid' means straightforward and honest.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 78: Select the antonym of 'Generous'.",
+    "options": ["Stingy", "Charitable", "Benevolent", "Magnanimous"],
+    "correctAnswer": "Stingy",
+    "explanation": "'Generous' means giving freely; its opposite is 'Stingy'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 79: Identify the misspelled word.",
+    "options": ["Believe", "Occasion", "Buisness", "Committee"],
+    "correctAnswer": "Buisness",
+    "explanation": "The correct spelling is 'Business'; 'Buisness' is misspelled.",
+    "tags": ["verbal reasoning", "spelling", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 80: Which word best completes the analogy: 'Knife is to Cut as Scissors is to ____'.",
+    "options": ["Slice", "Tear", "Snip", "Chop"],
+    "correctAnswer": "Snip",
+    "explanation": "Scissors are used for snipping, similar to how a knife is used for cutting.",
+    "tags": ["verbal reasoning", "analogy", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 81: Select the synonym for 'Oblique'.",
+    "options": ["Direct", "Indirect", "Straight", "Clear"],
+    "correctAnswer": "Indirect",
+    "explanation": "'Oblique' means not direct or straightforward; hence, 'Indirect'.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Question 82: Select the antonym of 'Brief'.",
+    "options": ["Short", "Concise", "Lengthy", "Terse"],
+    "correctAnswer": "Lengthy",
+    "explanation": "'Brief' means short; its opposite is 'Lengthy'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 83: Find the odd one out among these items.",
+    "options": ["Spoon", "Fork", "Knife", "Plate"],
+    "correctAnswer": "Plate",
+    "explanation": "Spoon, Fork, and Knife are utensils, whereas Plate is dishware.",
+    "tags": ["verbal reasoning", "odd one out", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 84: Choose the correct homophone for 'Dear'.",
+    "options": ["Deer", "Dare", "Door", "Dour"],
+    "correctAnswer": "Deer",
+    "explanation": "'Deer' sounds like 'Dear'.",
+    "tags": ["verbal reasoning", "homophone", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 85: Select the synonym for 'Emulate'.",
+    "options": ["Imitate", "Ignore", "Reject", "Neglect"],
+    "correctAnswer": "Imitate",
+    "explanation": "'Emulate' means to imitate or copy.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 86: Select the antonym of 'Scarce'.",
+    "options": ["Rare", "Abundant", "Sparse", "Limited"],
+    "correctAnswer": "Abundant",
+    "explanation": "Scarce means in short supply; its opposite is 'Abundant'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 87: Identify the misspelled word.",
+    "options": ["Recommend", "Accommodate", "Harass", "Begining"],
+    "correctAnswer": "Begining",
+    "explanation": "The correct spelling is 'Beginning'.",
+    "tags": ["verbal reasoning", "spelling", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 88: Which word best completes the analogy: 'Lock is to Key as Pen is to ____'.",
+    "options": ["Paper", "Ink", "Book", "Type"],
+    "correctAnswer": "Ink",
+    "explanation": "A lock works with a key just as a pen works with ink.",
+    "tags": ["verbal reasoning", "analogy", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 89: Select the synonym for 'Vivid'.",
+    "options": ["Dull", "Bright", "Faded", "Dim"],
+    "correctAnswer": "Bright",
+    "explanation": "'Vivid' means bright or striking in appearance.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 90: Select the antonym of 'Flexible'.",
+    "options": ["Rigid", "Supple", "Pliant", "Lithe"],
+    "correctAnswer": "Rigid",
+    "explanation": "'Flexible' means easily bent; the opposite is 'Rigid'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 91: Find the word that does not belong.",
+    "options": ["Eagle", "Sparrow", "Falcon", "Penguin"],
+    "correctAnswer": "Penguin",
+    "explanation": "Eagle, Sparrow, and Falcon are birds that fly; Penguin cannot fly.",
+    "tags": ["verbal reasoning", "odd one out", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 92: Choose the homophone for 'Scene'.",
+    "options": ["Seen", "Scent", "Screen", "Seine"],
+    "correctAnswer": "Seen",
+    "explanation": "'Seen' is pronounced like 'Scene'.",
+    "tags": ["verbal reasoning", "homophone", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 93: Select the synonym for 'Crisp'.",
+    "options": ["Soft", "Firm", "Flabby", "Mushy"],
+    "correctAnswer": "Firm",
+    "explanation": "'Crisp' often means firm or brisk in texture.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 94: Select the antonym of 'Complex'.",
+    "options": ["Simple", "Intricate", "Complicated", "Elaborate"],
+    "correctAnswer": "Simple",
+    "explanation": "'Complex' means complicated; the antonym is 'Simple'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 95: Identify the misspelled word.",
+    "options": ["Supersede", "Pronunciation", "Recomend", "Embarrass"],
+    "correctAnswer": "Recomend",
+    "explanation": "The correct spelling is 'Recommend'.",
+    "tags": ["verbal reasoning", "spelling", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 96: Which word best completes the analogy: 'Battery is to Flashlight as Fuel is to ____'.",
+    "options": ["Engine", "Car", "Light", "Heat"],
+    "correctAnswer": "Engine",
+    "explanation": "A battery powers a flashlight just as fuel powers an engine.",
+    "tags": ["verbal reasoning", "analogy", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 97: Select the synonym for 'Brisk'.",
+    "options": ["Slow", "Energetic", "Lethargic", "Dull"],
+    "correctAnswer": "Energetic",
+    "explanation": "'Brisk' means lively or energetic.",
+    "tags": ["verbal reasoning", "synonym", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Question 98: Select the antonym of 'Sparse'.",
+    "options": ["Scattered", "Dense", "Thin", "Meager"],
+    "correctAnswer": "Dense",
+    "explanation": "'Sparse' means thinly dispersed; its opposite is 'Dense'.",
+    "tags": ["verbal reasoning", "antonym", "vocabulary"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Question 99: Find the word that does not belong.",
+    "options": ["Red", "Blue", "Yellow", "Rectangle"],
+    "correctAnswer": "Rectangle",
+    "explanation": "Red, Blue, and Yellow are colors; Rectangle is a shape.",
+    "tags": ["verbal reasoning", "odd one out", "vocabulary"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Question 100: Choose the correct homophone for 'Flew'.",
+    "options": ["Flu", "Flue", "Flow", "Flew"],
+    "correctAnswer": "Flu",
+    "explanation": "'Flu' is pronounced like 'Flew' and is short for influenza.",
+    "tags": ["verbal reasoning", "homophone", "vocabulary"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'TABLET'.",
+    "options": ["BALE", "LATE", "TALE", "ABLE"],
+    "correctAnswer": "ABLE",
+    "explanation": "The word 'ABLE' is hidden within 'TABLET'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'SPINACH'?",
+    "options": ["PAN", "SIN", "HIP", "CAN"],
+    "correctAnswer": "SIN",
+    "explanation": "The word 'SIN' is hidden within 'SPINACH'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+    {
+    "questionText": "Find a four letter word hidden in 'PAINTING'",
+    "options": ["GAIN", "PAIN", "TINE", "ANTI"],
+    "correctAnswer": "PAIN",
+    "explanation": "The word 'PAIN' is hidden within 'PAINTING'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'BUTTER'?",
+    "options": ["TUB", "BET", "RUE", "UTE"],
+    "correctAnswer": "BUT",
+    "explanation": "The word 'BUT' is hidden within 'BUTTER'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'FLOWER'?",
+    "options": ["FLOW", "ROWE", "LORE", "WOLF"],
+    "correctAnswer": "FLOW",
+    "explanation": "The word 'FLOW' is hidden within 'FLOWER'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "What three letter word is hidden in 'STAMP'?",
+    "options": ["MAT", "TAP", "PAM", "SAT"],
+    "correctAnswer": "MAT",
+    "explanation": "The word 'MAT' is hidden within 'STAMP'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'CRADLE'.",
+    "options": ["DALE", "LACE", "READ", "CARE"],
+    "correctAnswer": "READ",
+    "explanation": "The word 'READ' is hidden within 'CRADLE'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'WINTER'?",
+    "options": ["WIN", "TIE", "REW", "TEN"],
+    "correctAnswer": "WIN",
+    "explanation": "The word 'WIN' is hidden within 'WINTER'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+    {
+    "questionText": "Find a four letter word hidden in 'GROUND'",
+    "options": ["UNDO", "ROUN", "DOG", "GIRD"],
+    "correctAnswer": "ROUN",
+    "explanation": "The word 'ROUN' is hidden within 'GROUND'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "What three letter word is hidden in 'CHAIR'?",
+    "options": ["ARC", "HIC", "RIA", "CAR"],
+    "correctAnswer": "AIR",
+    "explanation": "The word 'AIR' is hidden within 'CHAIR'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'PLANET'.",
+    "options": ["ANTE", "LANE", "PLAN", "TALE"],
+    "correctAnswer": "PLAN",
+    "explanation": "The word 'PLAN' is hidden within 'PLANET'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'STREET'?",
+    "options": ["TEE", "RET", "TRE", "SEE"],
+    "correctAnswer": "TEE",
+    "explanation": "The word 'TEE' is hidden within 'STREET'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'BOTTLE'.",
+    "options": ["TOLB", "LOBE", "BOTE", "TELL"],
+    "correctAnswer": "TELL",
+    "explanation": "The word 'TELL' is hidden within 'BOTTLE'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'WINDOW'?",
+    "options": ["NOW", "WON", "DIN", "DOW"],
+    "correctAnswer": "NOW",
+    "explanation": "The word 'NOW' is hidden within 'WINDOW'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'SPARKLE'.",
+    "options": ["PARK", "LARK", "RALE", "KALE"],
+    "correctAnswer": "PARK",
+    "explanation": "The word 'PARK' is hidden within 'SPARKLE'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'SPRING'?",
+    "options": ["RIN", "PIG", "SIN", "RIP"],
+    "correctAnswer": "RIN",
+    "explanation": "The word 'RIN' is hidden within 'SPRING'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'COMFORT'.",
+    "options": ["FROM", "FORT", "ROAM", "TROM"],
+    "correctAnswer": "FORT",
+    "explanation": "The word 'FORT' is hidden within 'COMFORT'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'BASKET'?",
+    "options": ["ASK", "BET", "SEA", "TAB"],
+    "correctAnswer": "ASK",
+    "explanation": "The word 'ASK' is hidden within 'BASKET'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Find a four letter word hidden in 'MARKET'",
+    "options": ["RAME", "RATE", "MARE", "TRAM"],
+    "correctAnswer": "RATE",
+    "explanation": "The word 'RATE' is hidden within 'MARKET'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "What three letter word is hidden in 'GROUND'?",
+    "options": ["RUN", "DOG", "GUN", "ROW"],
+    "correctAnswer": "RUN",
+    "explanation": "The word 'RUN' is hidden within 'GROUND'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Find a six-letter word hidden within 'CONSTITUTIONAL'.",
+    "options": ["NATION", "TUTION", "STATUS", "LOCATE"],
+    "correctAnswer": "NATION",
+    "explanation": "The word 'NATION' is hidden within 'CONSTITUTIONAL'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "What five-letter word is hidden in 'METAMORPHOSIS'?",
+    "options": ["TROPE", "MOTHS", "ROMEO", "PHASE"],
+    "correctAnswer": "MOTHS",
+    "explanation": "The word 'MOTHS' is hidden within 'METAMORPHOSIS'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "Find a seven-letter word hidden in 'ANTHROPOLOGY'.",
+    "options": ["POLYGON", "TROPICAL", "PATHWAY", "HOLIDAY"],
+    "correctAnswer": "PATHWAY",
+    "explanation": "The word 'PATHWAY' is hidden within 'ANTHROPOLOGY'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 8
+  },
+  {
+    "questionText": "What six-letter word is hidden within 'EXTRAORDINARY'?",
+    "options": ["TRAINS", "ORDIN", "ROARER", "RADION"],
+    "correctAnswer": "ORDIN",
+    "explanation": "The word 'ORDIN' is hidden within 'EXTRAORDINARY'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Find a five-letter word hidden in 'CIRCUMNAVIGATION'.",
+    "options": ["TRAIN", "CIVIC", "RATIO", "NOVEL"],
+    "correctAnswer": "RATIO",
+    "explanation": "The word 'RATIO' is hidden within 'CIRCUMNAVIGATION'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "What seven-letter word is hidden in 'TRANSFORMATION'?",
+    "options": ["FORMULA", "NATIONS", "ROMANCE", "TRAITOR"],
+    "correctAnswer": "TRAITOR",
+    "explanation": "The word 'TRAITOR' is hidden within 'TRANSFORMATION'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 8
+  },
+    {
+    "questionText": "Find a six-letter word hidden within 'DEMONSTRATION'.",
+    "options": ["MONIES", "STRIED", "TRAINS", "DEMONS"],
+    "correctAnswer": "DEMONS",
+    "explanation": "The word 'DEMONS' is hidden within 'DEMONSTRATION'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "What five-letter word is hidden in 'PHILOSOPHICAL'?",
+    "options": ["LOSER", "PHIAL", "OPALS", "SLICE"],
+    "correctAnswer": "PHIAL",
+    "explanation": "The word 'PHIAL' is hidden within 'PHILOSOPHICAL'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "Find a seven-letter word hidden in 'REFRIGERATOR'.",
+    "options": ["FRACTAL", "GRATIFY", "REGALIA", "RETIRED"],
+    "correctAnswer": "RETIRED",
+    "explanation": "The word 'RETIRED' is hidden within 'REFRIGERATOR'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 8
+  },
+  {
+    "questionText": "What six-letter word is hidden in 'COMPREHENSION'?",
+    "options": ["NOVICE", "PREACH", "MOTION", "COMERS"],
+    "correctAnswer": "MOTION",
+    "explanation": "The word 'MOTION' is hidden within 'COMPREHENSION'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Find a five-letter word hidden in 'ILLUSTRATION'?",
+    "options": ["TRAIL", "RURAL", "LIONS", "TRIOS"],
+    "correctAnswer": "TRAIL",
+    "explanation": "The word 'TRAIL' is hidden within 'ILLUSTRATION'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "What seven-letter word is hidden in 'CHARACTERISTIC'?",
+    "options": ["RATCHET", "CRITICS", "ACTRESS", "HACKERS"],
+    "correctAnswer": "ACTRESS",
+    "explanation": "The word 'ACTRESS' is hidden within 'CHARACTERISTIC'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 8
+  },
+    {
+    "questionText": "Find a six-letter word hidden within 'INVESTIGATION'.",
+    "options": ["VESTAL", "NATIONS", "GATION", "TIVENS"],
+    "correctAnswer": "NATIONS",
+    "explanation": "The word 'NATIONS' is hidden within 'INVESTIGATION'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "What five-letter word is hidden in 'ACCELERATION'?",
+    "options": ["ALTER", "CELLA", "RATED", "LATER"],
+    "correctAnswer": "LATER",
+    "explanation": "The word 'LATER' is hidden within 'ACCELERATION'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "Find a seven-letter word hidden in 'DISCRIMINATION'.",
+    "options": ["MINERAL", "CRIMSON", "RATIONS", "NATIONS"],
+    "correctAnswer": "RATIONS",
+    "explanation": "The word 'RATIONS' is hidden within 'DISCRIMINATION'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 8
+  },
+  {
+    "questionText": "What six-letter word is hidden in 'REPRESENTATIVE'?",
+    "options": ["SENTIA", "TENTER", "PERUSE", "PRESENT"],
+    "correctAnswer": "PRESENT",
+    "explanation": "The word 'PRESENT' is hidden within 'REPRESENTATIVE'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Find a five-letter word hidden in 'ADMINISTRATION'?",
+    "options": ["MINIS", "TRAIN", "RATIO", "TREND"],
+    "correctAnswer": "TRAIN",
+    "explanation": "The word 'TRAIN' is hidden within 'ADMINISTRATION'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "What seven-letter word is hidden in 'CONGLOMERATE'?",
+    "options": ["GLOMING", "ROMANCE", "MANTLED", "LOMENTA"],
+    "correctAnswer": "ROMANCE",
+    "explanation": "The word 'ROMANCE' is hidden within 'CONGLOMERATE'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 8
+  },
+  {
+    "questionText": "Find a six-letter word hidden within 'REVOLUTIONARY'.",
+    "options": ["LUTION", "VOLANT", "REVOLT", "TRAINS"],
+    "correctAnswer": "REVOLT",
+    "explanation": "The word 'REVOLT' is hidden within 'REVOLUTIONARY'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "What five-letter word is hidden in 'DETERMINATION'?",
+    "options": ["MINED", "TRAIN", "RATIO", "TREND"],
+    "correctAnswer": "MINED",
+    "explanation": "The word 'MINED' is hidden within 'DETERMINATION'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'SPORTS'.",
+    "options": ["ROTS", "POTS", "SORT", "TORS"],
+    "correctAnswer": "SORT",
+    "explanation": "The word 'SORT' is hidden within 'SPORTS'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'BRANCH'?",
+    "options": ["RAN", "CAB", "ARC", "BAR"],
+    "correctAnswer": "RAN",
+    "explanation": "The word 'RAN' is hidden within 'BRANCH'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'CHIMNEY'.",
+    "options": ["HIMY", "MINE", "CHIN", "MICE"],
+    "correctAnswer": "MINE",
+    "explanation": "The word 'MINE' is hidden within 'CHIMNEY'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'PLANT'?",
+    "options": ["TAP", "ANT", "PEN", "LAT"],
+    "correctAnswer": "ANT",
+    "explanation": "The word 'ANT' is hidden within 'PLANT'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'FINGER'.",
+    "options": ["RING", "FINE", "REIN", "GIRE"],
+    "correctAnswer": "RING",
+    "explanation": "The word 'RING' is hidden within 'FINGER'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'CLIMB'?",
+    "options": ["LIB", "MIC", "LIM", "BIL"],
+    "correctAnswer": "LIM",
+    "explanation": "The word 'LIM' is hidden within 'CLIMB'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'BRIDGE'.",
+    "options": ["RIDE", "DIRE", "GRID", "BIRE"],
+    "correctAnswer": "RIDE",
+    "explanation": "The word 'RIDE' is hidden within 'BRIDGE'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'TRUNK'?",
+    "options": ["RUN", "TUN", "URN", "NUK"],
+    "correctAnswer": "RUN",
+    "explanation": "The word 'RUN' is hidden within 'TRUNK'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'BLANKET'.",
+    "options": ["LANE", "BANK", "ANTE", "KALE"],
+    "correctAnswer": "BANK",
+    "explanation": "The word 'BANK' is hidden within 'BLANKET'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'CHEST'?",
+    "options": ["THE", "HET", "SEC", "TEC"],
+    "correctAnswer": "THE",
+    "explanation": "The word 'THE' is hidden within 'CHEST'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'DANGER'.",
+    "options": ["RAGE", "GARD", "DARN", "NARD"],
+    "correctAnswer": "RAGE",
+    "explanation": "The word 'RAGE' is hidden within 'DANGER'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'FROST'?",
+    "options": ["ROT", "FOR", "OFT", "TOR"],
+    "correctAnswer": "ROT",
+    "explanation": "The word 'ROT' is hidden within 'FROST'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'LUMBER'.",
+    "options": ["RUBE", "LURE", "BURE", "RULE"],
+    "correctAnswer": "LURE",
+    "explanation": "The word 'LURE' is hidden within 'LUMBER'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'PRINT'?",
+    "options": ["RIP", "PIN", "TIP", "NIT"],
+    "correctAnswer": "PIN",
+    "explanation": "The word 'PIN' is hidden within 'PRINT'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'STABLE'.",
+    "options": ["BALE", "LATE", "TALE", "ABLE"],
+    "correctAnswer": "ABLE",
+    "explanation": "The word 'ABLE' is hidden within 'STABLE'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'GRAPE'?",
+    "options": ["RAP", "PEG", "ARE", "GAP"],
+    "correctAnswer": "RAP",
+    "explanation": "The word 'RAP' is hidden within 'GRAPE'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'SILVER'.",
+    "options": ["VILE", "LIRE", "RIVE", "SIRE"],
+    "correctAnswer": "RIVE",
+    "explanation": "The word 'RIVE' is hidden within 'SILVER'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'SHARP'?",
+    "options": ["HAS", "RAP", "PAH", "ARS"],
+    "correctAnswer": "RAP",
+    "explanation": "The word 'RAP' is hidden within 'SHARP'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Find a four-letter word hidden in 'WIDEST'.",
+    "options": ["IDES", "WIDE", "DIET", "TIDE"],
+    "correctAnswer": "WIDE",
+    "explanation": "The word 'WIDE' is hidden within 'WIDEST'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "What three-letter word is hidden in 'BLUSH'?",
+    "options": ["LUS", "SUB", "BHS", "HUL"],
+    "correctAnswer": "LUS",
+    "explanation": "The word 'LUS' is hidden within 'BLUSH'.",
+    "tags": ["verbal reasoning", "Word Manipulation", "Hidden Words"],
+    "difficultyLevel": 3
+  },  
+  {
+    "questionText": "Which word completes the following analogy: Cat : Kitten :: Dog : ?",
+    "options": ["Puppy", "Canine", "Feline", "Animal"],
+    "correctAnswer": "Puppy",
+    "explanation": "A kitten is a baby cat, and a puppy is a baby dog.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Which word completes the following analogy: Hot : Cold :: Up : ?",
+    "options": ["Down", "Side", "Across", "Above"],
+    "correctAnswer": "Down",
+    "explanation": "Hot is the opposite of cold, and up is the opposite of down.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Which word completes the following analogy: Tree : Forest :: Flower : ?",
+    "options": ["Garden", "Plant", "Bud", "Stem"],
+    "correctAnswer": "Garden",
+    "explanation": "A tree is part of a forest, and a flower is part of a garden.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Which word completes the following analogy: Doctor : Patient :: Teacher : ?",
+    "options": ["School", "Lesson", "Student", "Desk"],
+    "correctAnswer": "Student",
+    "explanation": "A doctor treats a patient, and a teacher teaches a student.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Which word completes the following analogy: Book : Author :: Painting : ?",
+    "options": ["Gallery", "Artist", "Canvas", "Color"],
+    "correctAnswer": "Artist",
+    "explanation": "A book is created by an author, and a painting is created by an artist.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Which word completes the following analogy: Clock : Time :: Thermometer : ?",
+    "options": ["Weather", "Heat", "Temperature", "Measurement"],
+    "correctAnswer": "Temperature",
+    "explanation": "A clock measures time, and a thermometer measures temperature.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Which word completes the following analogy: Scale : Weight :: Ruler : ?",
+    "options": ["Area", "Length", "Volume", "Size"],
+    "correctAnswer": "Length",
+    "explanation": "A scale measures weight, and a ruler measures length.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Which word completes the following analogy: Symphony : Composer :: Sculpture : ?",
+    "options": ["Museum", "Chisel", "Artist", "Stone"],
+    "correctAnswer": "Artist",
+    "explanation": "A symphony is created by a composer, and a sculpture is created by an artist.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Which word completes the following analogy: Manuscript : Author :: Blueprint : ?",
+    "options": ["Building", "Architect", "Plan", "Construction"],
+    "correctAnswer": "Architect",
+    "explanation": "A manuscript is written by an author, and a blueprint is designed by an architect.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Which word completes the following analogy: Compass : Direction :: Protractor : ?",
+    "options": ["Angle", "Shape", "Measurement", "Geometry"],
+    "correctAnswer": "Angle",
+    "explanation": "A compass indicates direction, and a protractor measures angles.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Which word completes the following analogy: Odometer : Distance :: Barometer : ?",
+    "options": ["Weather", "Pressure", "Atmosphere", "Altitude"],
+    "correctAnswer": "Pressure",
+    "explanation": "An odometer measures distance, and a barometer measures atmospheric pressure.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Which word completes the following analogy: Fabric : Textile :: Ingredient : ?",
+    "options": ["Recipe", "Mixture", "Component", "Food"],
+    "correctAnswer": "Component",
+    "explanation": "Fabric is a type of textile, and an ingredient is a type of component.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "Which word completes the following analogy: Epilogue : Novel :: Coda : ?",
+    "options": ["Music", "Symphony", "Composition", "Finale"],
+    "correctAnswer": "Music",
+    "explanation": "An epilogue is the concluding part of a novel, and a coda is the concluding part of a musical composition.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "Which word completes the following analogy: Cartographer : Map :: Choreographer : ?",
+    "options": ["Stage", "Dance", "Performance", "Movement"],
+    "correctAnswer": "Dance",
+    "explanation": "A cartographer creates maps, and a choreographer creates dances.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 8
+  },
+  {
+    "questionText": "Which word completes the following analogy: Lexicon : Words :: Flora : ?",
+    "options": ["Animals", "Plants", "Ecosystem", "Environment"],
+    "correctAnswer": "Plants",
+    "explanation": "A lexicon is a dictionary of words, and flora refers to the plants of a particular region.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 8
+  },
+  {
+    "questionText": "Which word completes the following analogy: Pen : Write :: Scissors : ?",
+    "options": ["Cut", "Paper", "Sharp", "Blade"],
+    "correctAnswer": "Cut",
+    "explanation": "A pen is used to write, and scissors are used to cut.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Which word completes the following analogy: Foot : Shoe :: Hand : ?",
+    "options": ["Glove", "Ring", "Wrist", "Arm"],
+    "correctAnswer": "Glove",
+    "explanation": "A foot wears a shoe, and a hand wears a glove.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Which word completes the following analogy: Day : Night :: Light : ?",
+    "options": ["Dark", "Sun", "Moon", "Star"],
+    "correctAnswer": "Dark",
+    "explanation": "Day is the opposite of night, and light is the opposite of dark.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Which word completes the following analogy: Engine : Car :: Heart : ?",
+    "options": ["Blood", "Body", "Person", "Life"],
+    "correctAnswer": "Body",
+    "explanation": "An engine powers a car, and a heart powers a body.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Which word completes the following analogy: Seed : Plant :: Egg : ?",
+    "options": ["Chicken", "Bird", "Nest", "Shell"],
+    "correctAnswer": "Chicken",
+    "explanation": "A seed grows into a plant, and an egg hatches into a chicken.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Which word completes the following analogy: Story : Chapter :: Building : ?",
+    "options": ["Floor", "Room", "Wall", "Brick"],
+    "correctAnswer": "Floor",
+    "explanation": "A story is divided into chapters, and a building is divided into floors.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Which word completes the following analogy: Melody : Song :: Scene : ?",
+    "options": ["Play", "Act", "Director", "Stage"],
+    "correctAnswer": "Play",
+    "explanation": "A melody is part of a song, and a scene is part of a play.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Which word completes the following analogy: Island : Sea :: Oasis : ?",
+    "options": ["Desert", "Water", "Sand", "Heat"],
+    "correctAnswer": "Desert",
+    "explanation": "An island is surrounded by the sea, and an oasis is found in a desert.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Which word completes the following analogy: Filament : Bulb :: Wick : ?",
+    "options": ["Candle", "Flame", "Wax", "Light"],
+    "correctAnswer": "Candle",
+    "explanation": "A filament is part of a bulb, and a wick is part of a candle.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Which word completes the following analogy: Verse : Poem :: Movement : ?",
+    "options": ["Dance", "Music", "Symphony", "Rhythm"],
+    "correctAnswer": "Symphony",
+    "explanation": "A verse is part of a poem, and a movement is part of a symphony.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "Which word completes the following analogy: Pixel : Image :: Cell : ?",
+    "options": ["Body", "Organ", "Tissue", "Organism"],
+    "correctAnswer": "Tissue",
+    "explanation": "A pixel is part of an image, and a cell is part of a tissue.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "Which word completes the following analogy: Hypothesis : Theory :: Sketch : ?",
+    "options": ["Painting", "Drawing", "Artwork", "Masterpiece"],
+    "correctAnswer": "Masterpiece",
+    "explanation": "A hypothesis develops into a theory, and a sketch develops into a masterpiece.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 8
+  },
+  {
+    "questionText": "Which word completes the following analogy: Spoke : Wheel :: Rung : ?",
+    "options": ["Stairs", "Ladder", "Wood", "Climb"],
+    "correctAnswer": "Ladder",
+    "explanation": "A spoke is part of a wheel, and a rung is part of a ladder.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Which word completes the following analogy: Key : Lock :: Password : ?",
+    "options": ["Computer", "Security", "Access", "Code"],
+    "correctAnswer": "Access",
+    "explanation": "A key opens a lock, and a password grants access.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Which word completes the following analogy: Wing : Bird :: Fin : ?",
+    "options": ["Water", "Fish", "Swim", "Sea"],
+    "correctAnswer": "Fish",
+    "explanation": "A wing is part of a bird, and a fin is part of a fish.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Which word completes the following analogy: Root : Tree :: Foundation : ?",
+    "options": ["Building", "House", "Ground", "Brick"],
+    "correctAnswer": "Building",
+    "explanation": "A root supports a tree, and a foundation supports a building.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Which word completes the following analogy: Yarn : Knit :: Clay : ?",
+    "options": ["Pottery", "Sculpt", "Mold", "Art"],
+    "correctAnswer": "Pottery",
+    "explanation": "Yarn is used to knit, and clay is used for pottery.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Which word completes the following analogy: Battery : Flashlight :: Fuel : ?",
+    "options": ["Engine", "Car", "Power", "Gas"],
+    "correctAnswer": "Engine",
+    "explanation": "A battery powers a flashlight, and fuel powers an engine.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Which word completes the following analogy: Lens : Camera :: Eye : ?",
+    "options": ["Vision", "Sight", "Human", "Body"],
+    "correctAnswer": "Vision",
+    "explanation": "A lens is part of a camera, and an eye is used for vision.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Which word completes the following analogy: Chord : Music :: Color : ?",
+    "options": ["Painting", "Art", "Spectrum", "Hue"],
+    "correctAnswer": "Painting",
+    "explanation": "A chord is part of music, and color is part of a painting.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Which word completes the following analogy: Element : Compound :: Note : ?",
+    "options": ["Song", "Melody", "Harmony", "Composition"],
+    "correctAnswer": "Melody",
+    "explanation": "Elements form a compound, and notes form a melody.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "Which word completes the following analogy: Algorithm : Program :: Recipe : ?",
+    "options": ["Food", "Meal", "Dish", "Cooking"],
+    "correctAnswer": "Dish",
+    "explanation": "An algorithm is used in a program, and a recipe is used to make a dish.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "Which word completes the following analogy: Syntax : Language :: Grammar : ?",
+    "options": ["Sentence", "Speech", "Writing", "Communication"],
+    "correctAnswer": "Sentence",
+    "explanation": "Syntax is part of language, and grammar is part of a sentence.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 8
+  },
+  {
+    "questionText": "Which word completes the following analogy: Stanza : Poem :: Scene : ?",
+    "options": ["Play", "Movie", "Theater", "Act"],
+    "correctAnswer": "Play",
+    "explanation": "A stanza is part of a poem, and a scene is part of a play.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 8
+  },
+  {
+    "questionText": "Which word completes the following analogy: Tire : Car :: Sole : ?",
+    "options": ["Shoe", "Foot", "Walk", "Leather"],
+    "correctAnswer": "Shoe",
+    "explanation": "A tire is part of a car, and a sole is part of a shoe.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 2
+  },
+  {
+    "questionText": "Which word completes the following analogy: Page : Newspaper :: Frame : ?",
+    "options": ["Picture", "Wall", "Art", "Gallery"],
+    "correctAnswer": "Picture",
+    "explanation": "A page is part of a newspaper, and a frame is part of a picture.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Which word completes the following analogy: Story : Book :: Play : ?",
+    "options": ["Theater", "Act", "Script", "Stage"],
+    "correctAnswer": "Script",
+    "explanation": "A story is in a book, and a play is in a script.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 3
+  },
+  {
+    "questionText": "Which word completes the following analogy: Key : Piano :: Button : ?",
+    "options": ["Remote", "Control", "Device", "Press"],
+    "correctAnswer": "Remote",
+    "explanation": "A key is part of a piano, and a button is part of a remote.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Which word completes the following analogy: Ingredient : Cake :: Component : ?",
+    "options": ["Machine", "Part", "Build", "Create"],
+    "correctAnswer": "Machine",
+    "explanation": "An ingredient is part of a cake, and a component is part of a machine.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 4
+  },
+  {
+    "questionText": "Which word completes the following analogy: Chapter : Novel :: Act : ?",
+    "options": ["Theater", "Play", "Scene", "Drama"],
+    "correctAnswer": "Play",
+    "explanation": "A chapter is part of a novel, and an act is part of a play.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Which word completes the following analogy: String : Guitar :: Wire : ?",
+    "options": ["Electricity", "Cable", "Instrument", "Harp"],
+    "correctAnswer": "Cable",
+    "explanation": "A string is part of a guitar, and a wire is part of a cable.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 5
+  },
+  {
+    "questionText": "Which word completes the following analogy: Panel : Door :: Screen : ?",
+    "options": ["Television", "Monitor", "Display", "Device"],
+    "correctAnswer": "Television",
+    "explanation": "A panel is part of a door, and a screen is part of a television.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Which word completes the following analogy: Segment : Circle :: Section : ?",
+    "options": ["Square", "Shape", "Area", "Rectangle"],
+    "correctAnswer": "Rectangle",
+    "explanation": "A segment is part of a circle, and a section is part of a rectangle.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 6
+  },
+  {
+    "questionText": "Which word completes the following analogy: Phrase : Sentence :: Clause : ?",
+    "options": ["Paragraph", "Speech", "Writing", "Statement"],
+    "correctAnswer": "Paragraph",
+    "explanation": "A phrase is part of a sentence, and a clause is part of a paragraph.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "Which word completes the following analogy: Element : Molecule :: Phoneme : ?",
+    "options": ["Word", "Sound", "Language", "Speech"],
+    "correctAnswer": "Word",
+    "explanation": "An element forms a molecule, and a phoneme forms a word.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 7
+  },
+  {
+    "questionText": "Which word completes the following analogy: Neuron : Brain :: Transistor : ?",
+    "options": ["Computer", "Circuit", "Device", "Technology"],
+    "correctAnswer": "Computer",
+    "explanation": "A neuron is part of a brain, and a transistor is part of a computer.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 8
+  },
+  {
+    "questionText": "Which word completes the following analogy: Petal : Flower :: Tile : ?",
+    "options": ["Roof", "Floor", "Wall", "Mosaic"],
+    "correctAnswer": "Floor",
+    "explanation": "A petal is part of a flower, and a tile is part of a floor.",
+    "tags": ["Vocabulary", "Word Connections"],
+    "difficultyLevel": 8
+  }
+]

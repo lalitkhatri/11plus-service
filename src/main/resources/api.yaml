@@ -1,0 +1,1758 @@
+openapi: 3.0.0
+info:
+  title: Learning Platform API
+  version: 1.0.0
+  description: API specification for the Admin, Student, and Parent functionalities of the Learning Platform.
+
+servers:
+  - url: https://api.yourlearningplatform.com/v1
+    description: Production server
+
+tags:
+  - name: Authentication
+    description: User authentication and registration
+  - name: Admin - Content Management
+    description: Endpoints for administrators to manage sections, categories, and questions.
+  - name: Admin - User Management
+    description: Endpoints for administrators to manage users and roles.
+  - name: Student - Content Access
+    description: Endpoints for students to access study content and questions.
+  - name: Student - Progress & Attempts
+    description: Endpoints for students to record and view their study progress.
+  - name: Parent - Child Progress
+    description: Endpoints for parents to monitor their child's progress.
+
+security:
+  - bearerAuth: []
+
+paths:
+  /auth/google/login:
+    post:
+      summary: Initiate Google login
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                idToken:
+                  type: string
+                  description: Google ID token received from the frontend.
+      responses:
+        '200':
+          description: Successful login, returns JWT token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthSuccess'
+        '401':
+          description: Unauthorized - Invalid ID token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /auth/google/register:
+    post:
+      summary: Register new user with Google Identity
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                idToken:
+                  type: string
+                  description: Google ID token received from the frontend.
+                role:
+                  type: string
+                  enum: [student, parent]
+                  description: Desired role for the new user (student or parent).
+              required:
+                - idToken
+                - role
+      responses:
+        '201':
+          description: User registered successfully, returns JWT token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthSuccess'
+        '400':
+          description: Bad request - User already exists or invalid role.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /auth/token/refresh:
+    post:
+      summary: Refresh access token
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                refreshToken:
+                  type: string
+                  description: Refresh token provided during login.
+              required:
+                - refreshToken
+      responses:
+        '200':
+          description: Token refreshed successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthSuccess'
+        '401':
+          description: Unauthorized - Invalid refresh token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /users/me:
+    get:
+      summary: Get current authenticated user's profile
+      tags:
+        - Authentication
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: User profile retrieved successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '401':
+          description: Unauthorized - Missing or invalid token.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /content/sections:
+    get:
+      summary: Get all content sections
+      tags:
+        - Admin - Content Management
+        - Student - Content Access
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: List of content sections.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ContentSection'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      summary: Add a new content section (Admin only)
+      tags:
+        - Admin - Content Management
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: Name of the new section.
+              required:
+                - name
+      responses:
+        '201':
+          description: Section created successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ContentSection'
+        '400':
+          description: Bad request - Missing name or duplicate.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not an Admin.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /content/sections/{sectionId}:
+    put:
+      summary: Update an existing content section (Admin only)
+      tags:
+        - Admin - Content Management
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: sectionId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the section to update.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: New name for the section.
+              required:
+                - name
+      responses:
+        '200':
+          description: Section updated successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ContentSection'
+        '400':
+          description: Bad request - Missing name or invalid ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not an Admin.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - Section not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /content/sections/{sectionId}/categories:
+    get:
+      summary: Get categories within a specific section
+      tags:
+        - Admin - Content Management
+        - Student - Content Access
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: sectionId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the section.
+      responses:
+        '200':
+          description: List of categories within the section.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ContentCategory'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - Section not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      summary: Add a new content category to a section (Admin only)
+      tags:
+        - Admin - Content Management
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: sectionId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the section to add the category to.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: Name of the new category.
+              required:
+                - name
+      responses:
+        '201':
+          description: Category created successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ContentCategory'
+        '400':
+          description: Bad request - Missing name or duplicate.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not an Admin.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - Section not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /content/categories/{categoryId}:
+    put:
+      summary: Update an existing content category (Admin only)
+      tags:
+        - Admin - Content Management
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: categoryId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the category to update.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: New name for the category.
+              required:
+                - name
+      responses:
+        '200':
+          description: Category updated successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ContentCategory'
+        '400':
+          description: Bad request - Missing name or invalid ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not an Admin.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - Category not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /questions:
+    post:
+      summary: Add a new multiple-choice question (Admin only)
+      tags:
+        - Admin - Content Management
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewQuestion'
+      responses:
+        '201':
+          description: Question created successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Question'
+        '400':
+          description: Bad request - Invalid question data.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not an Admin.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /questions/random:
+    get:
+      summary: Get random multiple-choice questions (Student only)
+      tags:
+        - Student - Content Access
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: count
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 10
+            minimum: 1
+          description: Number of questions to retrieve.
+        - name: sectionId
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Filter by section ID.
+        - name: categoryId
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Filter by category ID.
+        - name: difficulty
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [Easy, Medium, Hard]
+          description: Filter by difficulty level.
+      responses:
+        '200':
+          description: List of questions.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Question'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not a Student.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - No questions matching criteria.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /questions/{questionId}:
+    get:
+      summary: Get a specific question and its explanation
+      tags:
+        - Admin - Content Management
+        - Student - Content Access
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: questionId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the question to retrieve.
+      responses:
+        '200':
+          description: Question details retrieved successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Question'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - Question not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    put:
+      summary: Update an existing multiple-choice question (Admin only)
+      tags:
+        - Admin - Content Management
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: questionId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the question to update.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateQuestion'
+      responses:
+        '200':
+          description: Question updated successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Question'
+        '400':
+          description: Bad request - Invalid question data.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not an Admin.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - Question not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    delete:
+      summary: Delete a multiple-choice question (Admin only)
+      tags:
+        - Admin - Content Management
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: questionId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the question to delete.
+      responses:
+        '204':
+          description: Question deleted successfully.
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not an Admin.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - Question not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /users:
+    get:
+      summary: Get a list of all users (Admin only)
+      tags:
+        - Admin - User Management
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: role
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [admin, student, parent]
+          description: Filter users by role.
+        - name: status
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [active, blocked]
+          description: Filter users by status.
+      responses:
+        '200':
+          description: List of users.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not an Admin.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /users/{userId}/role:
+    put:
+      summary: Update a user's role (Admin only)
+      tags:
+        - Admin - User Management
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the user to update.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                role:
+                  type: string
+                  enum: [admin, student, parent]
+                  description: New role for the user.
+              required:
+                - role
+      responses:
+        '200':
+          description: User role updated successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Bad request - Invalid role or ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not an Admin.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - User not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /users/{userId}/status:
+    put:
+      summary: Block or unblock a user (Admin only)
+      tags:
+        - Admin - User Management
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the user to update.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  enum: [active, blocked]
+                  description: New status for the user.
+              required:
+                - status
+      responses:
+        '200':
+          description: User status updated successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Bad request - Invalid status or ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not an Admin.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - User not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /users/{userId}:
+    delete:
+      summary: Remove a user (Admin only)
+      tags:
+        - Admin - User Management
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the user to remove.
+      responses:
+        '204':
+          description: User removed successfully.
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not an Admin.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - User not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /logs/activity:
+    get:
+      summary: Retrieve system activity logs (Admin only)
+      tags:
+        - Admin - User Management
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: userId
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Filter by specific user ID.
+        - name: startDate
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date
+          description: Filter logs from this date (YYYY-MM-DD).
+        - name: endDate
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date
+          description: Filter logs up to this date (YYYY-MM-DD).
+        - name: activityType
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Filter by type of activity (e.g., login, content_update, question_attempt).
+      responses:
+        '200':
+          description: List of activity logs.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ActivityLog'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not an Admin.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /student/attempts:
+    post:
+      summary: Submit a student's answer for a multiple-choice question (Student only)
+      tags:
+        - Student - Progress & Attempts
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StudentAttemptRequest'
+      responses:
+        '201':
+          description: Attempt recorded successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentAttempt'
+        '400':
+          description: Bad request - Invalid attempt data.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not a Student.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - Question or student not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /student/mocktests/start:
+    post:
+      summary: Start a timed mock test (Student only)
+      tags:
+        - Student - Progress & Attempts
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: false # Can be started without parameters for a default test
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                numQuestions:
+                  type: integer
+                  minimum: 1
+                  default: 20
+                  description: Number of questions for the test.
+                sectionId:
+                  type: string
+                  description: Optional ID to filter questions by section.
+                categoryId:
+                  type: string
+                  description: Optional ID to filter questions by category.
+                difficulty:
+                  type: string
+                  enum: [Easy, Medium, Hard]
+                  description: Optional difficulty level for questions.
+      responses:
+        '200':
+          description: Mock test started, returns test details and questions.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MockTestStartResponse'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not a Student.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - No questions available for the given criteria.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /student/mocktests/{testId}/submit:
+    post:
+      summary: Submit answers for a completed mock test (Student only)
+      tags:
+        - Student - Progress & Attempts
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: testId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the mock test to submit.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                answers:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      questionId:
+                        type: string
+                      selectedAnswerId:
+                        type: string
+                    required:
+                      - questionId
+                      - selectedAnswerId
+              required:
+                - answers
+      responses:
+        '200':
+          description: Mock test results submitted successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MockTestSubmitResponse'
+        '400':
+          description: Bad request - Invalid test ID or answers.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not a Student.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - Test not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '409':
+          description: Conflict - Test already submitted.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /student/progress:
+    get:
+      summary: Get overall student progress metrics (Student only)
+      tags:
+        - Student - Progress & Attempts
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Student progress summary.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentProgressSummary'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not a Student.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /student/progress/questions/history:
+    get:
+      summary: Get a detailed history of all questions attempted by the student (Student only)
+      tags:
+        - Student - Progress & Attempts
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: status
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [Wrong, Right, NotAttempted]
+          description: Filter by attempt status.
+        - name: sectionId
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Filter by section ID.
+        - name: categoryId
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Filter by category ID.
+        - name: difficulty
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [Easy, Medium, Hard]
+          description: Filter by difficulty level.
+      responses:
+        '200':
+          description: List of question attempts or unattempted questions.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/QuestionHistoryItem'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not a Student.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /parent/children/{childId}/progress:
+    get:
+      summary: Get progress of a specific child (Parent only)
+      tags:
+        - Parent - Child Progress
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: childId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the child (student) to retrieve progress for.
+      responses:
+        '200':
+          description: Child's progress summary.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StudentProgressSummary'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not a Parent or not authorized for this child.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - Child not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /parent/children/{childId}/progress/history:
+    get:
+      summary: Get detailed question history for a child (Parent only)
+      tags:
+        - Parent - Child Progress
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: childId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID of the child (student) to retrieve history for.
+        - name: status
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [Wrong, Right, NotAttempted]
+          description: Filter by attempt status.
+        - name: sectionId
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Filter by section ID.
+        - name: categoryId
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Filter by category ID.
+        - name: difficulty
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [Easy, Medium, Hard]
+          description: Filter by difficulty level.
+      responses:
+        '200':
+          description: List of question attempts or unattempted questions for the child.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/QuestionHistoryItem'
+        '401':
+          description: Unauthorized.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Forbidden - User not a Parent or not authorized for this child.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Not Found - Child not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    Error:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+          description: Error code.
+        message:
+          type: string
+          description: A human-readable explanation of the error.
+      required:
+        - code
+        - message
+
+    AuthSuccess:
+      type: object
+      properties:
+        accessToken:
+          type: string
+          description: JWT access token.
+        refreshToken:
+          type: string
+          description: JWT refresh token (for long-lived sessions).
+        expiresIn:
+          type: integer
+          description: Access token expiration in seconds.
+        user:
+          $ref: '#/components/schemas/User'
+      required:
+        - accessToken
+        - expiresIn
+        - user
+
+    User:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+          description: Unique identifier for the user.
+        email:
+          type: string
+          format: email
+          description: User's email address.
+        name:
+          type: string
+          description: User's full name.
+        role:
+          type: string
+          enum: [admin, student, parent]
+          description: Role of the user in the system.
+        status:
+          type: string
+          enum: [active, blocked]
+          description: Current status of the user account.
+        createdAt:
+          type: string
+          format: date-time
+          description: Timestamp when the user account was created.
+        updatedAt:
+          type: string
+          format: date-time
+          description: Timestamp when the user account was last updated.
+      required:
+        - userId
+        - email
+        - name
+        - role
+        - status
+
+    ContentSection:
+      type: object
+      properties:
+        sectionId:
+          type: string
+          format: uuid
+          description: Unique identifier for the content section.
+        name:
+          type: string
+          description: Name of the content section (e.g., 'Mathematics', 'Science').
+      required:
+        - sectionId
+        - name
+
+    ContentCategory:
+      type: object
+      properties:
+        categoryId:
+          type: string
+          format: uuid
+          description: Unique identifier for the content category.
+        sectionId:
+          type: string
+          format: uuid
+          description: ID of the section this category belongs to.
+        name:
+          type: string
+          description: Name of the content category (e.g., 'Algebra', 'Physics').
+      required:
+        - categoryId
+        - sectionId
+        - name
+
+    QuestionOption:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the option.
+        text:
+          type: string
+          description: The text of the option.
+      required:
+        - id
+        - text
+
+    QuestionTags:
+      type: object
+      properties:
+        section:
+          type: string
+          description: The name of the section the question belongs to.
+        category:
+          type: string
+          description: The name of the category the question belongs to.
+        difficulty:
+          type: string
+          enum: [Easy, Medium, Hard]
+          description: Difficulty level of the question.
+      required:
+        - section
+        - category
+        - difficulty
+
+    Question:
+      type: object
+      properties:
+        questionId:
+          type: string
+          format: uuid
+          description: Unique identifier for the question.
+        questionText:
+          type: string
+          description: The main text of the multiple-choice question.
+        options:
+          type: array
+          items:
+            $ref: '#/components/schemas/QuestionOption'
+          description: Array of possible answer options.
+        correctAnswerId:
+          type: string
+          description: The ID of the correct answer option.
+        explanation:
+          type: string
+          description: Detailed explanation for the question and its answer.
+        tags:
+          $ref: '#/components/schemas/QuestionTags'
+        createdAt:
+          type: string
+          format: date-time
+          description: Timestamp when the question was created.
+        updatedAt:
+          type: string
+          format: date-time
+          description: Timestamp when the question was last updated.
+      required:
+        - questionId
+        - questionText
+        - options
+        - correctAnswerId
+        - explanation
+        - tags
+
+    NewQuestion:
+      type: object
+      properties:
+        questionText:
+          type: string
+          description: The main text of the multiple-choice question.
+        options:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              text:
+                type: string
+            required:
+              - id
+              - text
+          description: Array of possible answer options.
+        correctAnswerId:
+          type: string
+          description: The ID of the correct answer option.
+        explanation:
+          type: string
+          description: Detailed explanation for the question and its answer.
+        tags:
+          $ref: '#/components/schemas/QuestionTags'
+      required:
+        - questionText
+        - options
+        - correctAnswerId
+        - explanation
+        - tags
+
+    UpdateQuestion:
+      type: object
+      properties:
+        questionText:
+          type: string
+          description: The main text of the multiple-choice question.
+        options:
+          type: array
+          items:
+            $ref: '#/components/schemas/QuestionOption'
+          description: Array of possible answer options.
+        correctAnswerId:
+          type: string
+          description: The ID of the correct answer option.
+        explanation:
+          type: string
+          description: Detailed explanation for the question and its answer.
+        tags:
+          $ref: '#/components/schemas/QuestionTags'
+
+    StudentAttempt:
+      type: object
+      properties:
+        attemptId:
+          type: string
+          format: uuid
+          description: Unique identifier for the student attempt.
+        studentId:
+          type: string
+          format: uuid
+          description: ID of the student who made the attempt.
+        questionId:
+          type: string
+          format: uuid
+          description: ID of the question attempted.
+        selectedAnswerId:
+          type: string
+          description: ID of the option selected by the student.
+        isCorrect:
+          type: boolean
+          description: True if the selected answer was correct, false otherwise.
+        attemptedAt:
+          type: string
+          format: date-time
+          description: Timestamp of when the attempt was made.
+        timeTakenSeconds:
+          type: integer
+          description: Time taken to answer the question in seconds (optional).
+      required:
+        - attemptId
+        - studentId
+        - questionId
+        - selectedAnswerId
+        - isCorrect
+        - attemptedAt
+
+    StudentAttemptRequest:
+      type: object
+      properties:
+        questionId:
+          type: string
+          description: ID of the question being attempted.
+        selectedAnswerId:
+          type: string
+          description: ID of the option selected by the student.
+        timeTakenSeconds:
+          type: integer
+          description: Time taken to answer the question in seconds (optional).
+      required:
+        - questionId
+        - selectedAnswerId
+
+    StudentProgressSummary:
+      type: object
+      properties:
+        totalQuestionsAttempted:
+          type: integer
+          description: Total number of unique questions the student has attempted.
+        correctAnswers:
+          type: integer
+          description: Number of questions answered correctly.
+        incorrectAnswers:
+          type: integer
+          description: Number of questions answered incorrectly.
+        accuracyPercentage:
+          type: number
+          format: float
+          description: Percentage of correct answers (0-100).
+        sectionsCompleted:
+          type: integer
+          description: Number of sections where student has attempted all questions.
+        averageTimePerQuestion:
+          type: number
+          format: float
+          description: Average time taken per question in seconds.
+      required:
+        - totalQuestionsAttempted
+        - correctAnswers
+        - incorrectAnswers
+        - accuracyPercentage
+        - sectionsCompleted
+        - averageTimePerQuestion
+
+    QuestionHistoryItem:
+      type: object
+      properties:
+        questionId:
+          type: string
+          format: uuid
+          description: ID of the question.
+        questionText:
+          type: string
+          description: The text of the question.
+        status:
+          type: string
+          enum: [Wrong, Right, NotAttempted]
+          description: Status of the question for the student.
+        attemptedAt:
+          type: string
+          format: date-time
+          description: Timestamp of the last attempt (if any).
+        selectedAnswerId:
+          type: string
+          description: The option selected by the student (if attempted).
+        isCorrect:
+          type: boolean
+          description: Whether the last attempt was correct (if attempted).
+        explanation:
+          type: string
+          description: Explanation for the question (included for wrong/right attempts).
+        tags:
+          $ref: '#/components/schemas/QuestionTags'
+      required:
+        - questionId
+        - questionText
+        - status
+        - tags
+
+    ActivityLog:
+      type: object
+      properties:
+        logId:
+          type: string
+          format: uuid
+          description: Unique identifier for the log entry.
+        userId:
+          type: string
+          format: uuid
+          description: ID of the user who performed the activity.
+        activityType:
+          type: string
+          description: Type of activity (e.g., 'login', 'content_update', 'question_attempt').
+        description:
+          type: string
+          description: A brief description of the activity.
+        timestamp:
+          type: string
+          format: date-time
+          description: Timestamp of the activity.
+        details:
+          type: object
+          description: Optional JSON object for additional details specific to the activity.
+          additionalProperties: true
+      required:
+        - logId
+        - userId
+        - activityType
+        - description
+        - timestamp
+
+    MockTestQuestion:
+      type: object
+      properties:
+        questionId:
+          type: string
+          format: uuid
+          description: Unique identifier for the question.
+        questionText:
+          type: string
+          description: The main text of the multiple-choice question.
+        options:
+          type: array
+          items:
+            $ref: '#/components/schemas/QuestionOption'
+          description: Array of possible answer options.
+        tags:
+          $ref: '#/components/schemas/QuestionTags'
+      required:
+        - questionId
+        - questionText
+        - options
+        - tags
+
+    MockTestStartResponse:
+      type: object
+      properties:
+        testId:
+          type: string
+          format: uuid
+          description: Unique identifier for the started mock test session.
+        questions:
+          type: array
+          items:
+            $ref: '#/components/schemas/MockTestQuestion'
+          description: List of questions for the mock test (without correct answers).
+        startTime:
+          type: string
+          format: date-time
+          description: Timestamp when the mock test started.
+        durationSeconds:
+          type: integer
+          description: Total allowed duration for the test in seconds.
+      required:
+        - testId
+        - questions
+        - startTime
+        - durationSeconds
+
+    MockTestSubmitResponse:
+      type: object
+      properties:
+        testId:
+          type: string
+          format: uuid
+          description: ID of the submitted mock test.
+        score:
+          type: integer
+          description: Number of questions answered correctly.
+        totalQuestions:
+          type: integer
+          description: Total number of questions in the test.
+        percentage:
+          type: number
+          format: float
+          description: Percentage of correct answers (0-100).
+        results:
+          type: array
+          items:
+            type: object
+            properties:
+              questionId:
+                type: string
+              isCorrect:
+                type: boolean
+              correctAnswerId:
+                type: string
+              explanation:
+                type: string
+            required:
+              - questionId
+              - isCorrect
+              - correctAnswerId
+              - explanation
+          description: Detailed results for each question in the test.
+        submittedAt:
+          type: string
+          format: date-time
+          description: Timestamp when the mock test was submitted.
+      required:
+        - testId
+        - score
+        - totalQuestions
+        - percentage
+        - results
+        - submittedAt

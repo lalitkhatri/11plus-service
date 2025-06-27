@@ -5,7 +5,7 @@
  */
 package com.elevenplus.api;
 
-import elevenplus.model.ActivityLog;
+import com.elevenplus.model.ActivityLog;
 import com.elevenplus.model.Error;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;

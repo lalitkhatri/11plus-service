@@ -88,6 +88,16 @@
 			<version>4.5.1</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.openapitools</groupId>
+			<artifactId>openapi-generator-core</artifactId>
+			<version>6.6.0</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -108,10 +118,10 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
+			<!--<plugin>
 				<groupId>org.openapitools</groupId>
 				<artifactId>openapi-generator-maven-plugin</artifactId>
-				<version>6.6.0</version> <!-- Use the latest version -->
+				<version>6.6.0</version> &lt;!&ndash; Use the latest version &ndash;&gt;
 				<executions>
 					<execution>
 						<goals>
@@ -120,16 +130,16 @@
 					</execution>
 				</executions>
 				<configuration>
-					<inputSpec>${project.basedir}/src/main/resources/openapi.yaml</inputSpec>
+					<inputSpec>${project.basedir}/src/main/resources/api.yaml</inputSpec>
 					<output>${project.build.directory}/generated-sources/openapi</output>
-					<generatorName>spring</generatorName> <!-- Change to your desired generator -->
+					<generatorName>spring</generatorName> &lt;!&ndash; Change to your desired generator &ndash;&gt;
 					<apiPackage>com.elevenplus.api</apiPackage>
 					<modelPackage>com.elevenplus.model</modelPackage>
 					<configOptions>
 						<interfaceOnly>true</interfaceOnly>
 					</configOptions>
 				</configuration>
-			</plugin>
+			</plugin>-->
 		</plugins>
 	</build>
 

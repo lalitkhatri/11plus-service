@@ -1,27 +1,117 @@
 package com.elevenplus.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
+
+import javax.annotation.Generated;
+import javax.validation.constraints.*;
+import java.util.Objects;
+
+/**
+ * Error
+ */
+
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2025-06-27T14:08:22.962266600+01:00[Europe/London]")
 public class Error {
-    private int statusCode;
-    private String message;
 
-    public Error(int statusCode, String message) {
-        this.statusCode = statusCode;
-        this.message = message;
-    }
+  private Integer code;
 
-    public int getStatusCode() {
-        return statusCode;
-    }
+  private String message;
 
-    public void setStatusCode(int statusCode) {
-        this.statusCode = statusCode;
-    }
+  /**
+   * Default constructor
+   * @deprecated Use {@link Error#Error(Integer, String)}
+   */
+  @Deprecated
+  public Error() {
+    super();
+  }
 
-    public String getMessage() {
-        return message;
-    }
+  /**
+   * Constructor with only required parameters
+   */
+  public Error(Integer code, String message) {
+    this.code = code;
+    this.message = message;
+  }
 
-    public void setMessage(String message) {
-        this.message = message;
+  public Error code(Integer code) {
+    this.code = code;
+    return this;
+  }
+
+  /**
+   * Error code.
+   * @return code
+  */
+  @NotNull 
+  @Schema(name = "code", description = "Error code.", requiredMode = Schema.RequiredMode.REQUIRED)
+  @JsonProperty("code")
+  public Integer getCode() {
+    return code;
+  }
+
+  public void setCode(Integer code) {
+    this.code = code;
+  }
+
+  public Error message(String message) {
+    this.message = message;
+    return this;
+  }
+
+  /**
+   * A human-readable explanation of the error.
+   * @return message
+  */
+  @NotNull 
+  @Schema(name = "message", description = "A human-readable explanation of the error.", requiredMode = Schema.RequiredMode.REQUIRED)
+  @JsonProperty("message")
+  public String getMessage() {
+    return message;
+  }
+
+  public void setMessage(String message) {
+    this.message = message;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
     }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+    Error error = (Error) o;
+    return Objects.equals(this.code, error.code) &&
+        Objects.equals(this.message, error.message);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(code, message);
+  }
+
+  @Override
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class Error {\n");
+    sb.append("    code: ").append(toIndentedString(code)).append("\n");
+    sb.append("    message: ").append(toIndentedString(message)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(Object o) {
+    if (o == null) {
+      return "null";
+    }
+    return o.toString().replace("\n", "\n    ");
+  }
 }
+

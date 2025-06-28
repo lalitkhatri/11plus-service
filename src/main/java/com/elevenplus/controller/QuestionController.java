@@ -14,7 +14,6 @@ import javax.annotation.PostConstruct;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.Set;
 
 @RestController
 @RequestMapping("/api/questions")
@@ -92,6 +91,6 @@ public class QuestionController {
         }
         return ResponseEntity.ok(questionsByTags.subList(0, limit));
     }
-    
+
 
 }

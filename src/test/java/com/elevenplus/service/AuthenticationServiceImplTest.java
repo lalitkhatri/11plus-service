@@ -10,7 +10,6 @@ import org.mockito.MockitoAnnotations;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
-import java.util.Collections;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -48,27 +47,21 @@ class AuthenticationServiceImplTest {
         // Mock invalid token behavior
         when(verifier.verify("invalid-id-token")).thenReturn(null);
 
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            authenticationService.authenticateWithGoogle("invalid-id-token");
-        });
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> authenticationService.authenticateWithGoogle("invalid-id-token"));
 
         assertEquals("Invalid ID token", exception.getMessage());
     }
 
     @Test
     void testAuthenticateWithGoogle_NullToken() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            authenticationService.authenticateWithGoogle(null);
-        });
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> authenticationService.authenticateWithGoogle(null));
 
         assertEquals("Invalid ID token", exception.getMessage());
     }
 
     @Test
     void testAuthenticateWithGoogle_EmptyToken() {
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            authenticationService.authenticateWithGoogle("");
-        });
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> authenticationService.authenticateWithGoogle(""));
 
         assertEquals("Invalid ID token", exception.getMessage());
     }

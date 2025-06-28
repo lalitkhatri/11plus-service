@@ -3,6 +3,7 @@ package com.elevenplus.service;
 import com.elevenplus.model.AuthSuccess;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdTokenVerifier;
+import com.google.api.client.json.gson.GsonFactory;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -16,7 +17,7 @@ import com.google.api.client.http.javanet.NetHttpTransport;
 @Service
 public class AuthenticationServiceImpl implements AuthenticationService {
 
-    private static final JsonFactory jsonFactory = JacksonFactory.getDefaultInstance();
+    private static final JsonFactory jsonFactory = GsonFactory.getDefaultInstance();
     private static final HttpTransport transport = new NetHttpTransport();
     private static final String CLIENT_ID = "client-id";
 

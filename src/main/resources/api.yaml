@@ -544,7 +544,6 @@ paths:
       summary: Get a specific question and its explanation
       tags:
         - Admin - Content Management
-        - Student - Content Access
       security:
         - bearerAuth: []
       parameters:

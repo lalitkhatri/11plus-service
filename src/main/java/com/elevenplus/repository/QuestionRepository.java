@@ -29,23 +29,44 @@ public class QuestionRepository {
     }
 
     public List<VerbalReasoningQuestion> searchByTag(String tag) {
+        if (tag == null) {
+            return Collections.emptyList();
+        }
         return tagIndex.getOrDefault(tag.toLowerCase(), Collections.emptyList());
     }
     
     // Optional: For multiple tags (intersection)
     public List<VerbalReasoningQuestion> searchByTags(List<String> tags) {
+        if (tags == null || tags.isEmpty()) {
+            return Collections.emptyList();
+        }
         List<Set<VerbalReasoningQuestion>> listOfSets = new ArrayList<>();
         for (String tag : tags) {
             List<VerbalReasoningQuestion> list = searchByTag(tag);
             listOfSets.add(new HashSet<>(list));
-        }
-        if (listOfSets.isEmpty()) {
-            return Collections.emptyList();
         }
         Set<VerbalReasoningQuestion> intersection = listOfSets.get(0);
         for (Set<VerbalReasoningQuestion> set : listOfSets.subList(1, listOfSets.size())) {
             intersection.retainAll(set);
         }
         return new ArrayList<>(intersection);
+    }
+
+    public VerbalReasoningQuestion getRandomQuestion() {
+        if (questions.isEmpty()) {
+            return null; // or throw an exception
+        }
+        Random random = new Random();
+        int index = random.nextInt(questions.size());
+        return questions.get(index);
+    }
+
+    public VerbalReasoningQuestion getQuestionById(String id) {
+        for (VerbalReasoningQuestion question : questions) {
+            if (question.getId().equals(id)) {
+                return question;
+            }
+        }
+        return null;
     }
 }

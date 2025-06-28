@@ -41,7 +41,16 @@ class QuestionControllerTest {
 
         ResponseEntity<List<VerbalReasoningQuestion>> response = questionController.getAllQuestions();
         assertEquals(2, response.getBody().size());
-        assertEquals(200, response.getStatusCodeValue());
+        assertEquals(200, response.getStatusCode().value());
+    }
+
+    @Test
+    void testGetAllQuestions_Empty() {
+        when(questionRepository.getAllQuestions()).thenReturn(Collections.emptyList());
+        ResponseEntity<List<VerbalReasoningQuestion>> response = questionController.getAllQuestions();
+        assertNotNull(response.getBody());
+        assertTrue(response.getBody().isEmpty());
+        assertEquals(200, response.getStatusCode().value());
     }
 
     @Test
@@ -54,5 +63,22 @@ class QuestionControllerTest {
         assertNotNull(response.getBody());
         assertEquals(1, response.getBody().size());
     }
-}
 
+    @Test
+    void testGetQuestionsByTag_Empty() {
+        when(questionRepository.searchByTag("science")).thenReturn(Collections.emptyList());
+        ResponseEntity<List<VerbalReasoningQuestion>> response = questionController.getQuestionsByTag("science");
+        assertNotNull(response.getBody());
+        assertTrue(response.getBody().isEmpty());
+        assertEquals(200, response.getStatusCode().value());
+    }
+
+    @Test
+    void testGetQuestionsByTag_Null() {
+        when(questionRepository.searchByTag(null)).thenReturn(Collections.emptyList());
+        ResponseEntity<List<VerbalReasoningQuestion>> response = questionController.getQuestionsByTag(null);
+        assertNotNull(response.getBody());
+        assertTrue(response.getBody().isEmpty());
+        assertEquals(200, response.getStatusCode().value());
+    }
+}

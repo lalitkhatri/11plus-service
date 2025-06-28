@@ -3,6 +3,7 @@ package com.elevenplus.model;
 import java.util.List;
 
 public class Question {
+    private String id; // Assuming id can be of any type, adjust as necessary
     private String questionText;
     private List<String> options;
     private String correctAnswer;
@@ -73,5 +74,13 @@ public class Question {
                 ", tags=" + tags +
                 ", difficultyLevel=" + difficultyLevel +
                 '}';
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

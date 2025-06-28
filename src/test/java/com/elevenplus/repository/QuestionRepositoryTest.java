@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 
 import static java.util.Arrays.*;
 import static java.util.Collections.*;
+
+import java.util.Collections;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -31,6 +33,13 @@ class QuestionRepositoryTest {
     }
 
     @Test
+    void testGetAllQuestions_Empty() {
+        questionRepository = new QuestionRepository(Collections.emptyList());
+        List<VerbalReasoningQuestion> allQuestions = questionRepository.getAllQuestions();
+        assertTrue(allQuestions.isEmpty());
+    }
+
+    @Test
     void testSearchByTag() {
         List<VerbalReasoningQuestion> tag2Questions = questionRepository.searchByTag("tag2");
         assertEquals(2, tag2Questions.size());
@@ -43,6 +52,12 @@ class QuestionRepositoryTest {
     }
 
     @Test
+    void testSearchByTag_Null() {
+        List<VerbalReasoningQuestion> nullTagQuestions = questionRepository.searchByTag(null);
+        assertTrue(nullTagQuestions.isEmpty());
+    }
+
+    @Test
     void testSearchByTags() {
         List<VerbalReasoningQuestion> intersectionQuestions = questionRepository.searchByTags(asList("tag1", "tag2"));
         assertEquals(1, intersectionQuestions.size());
@@ -52,5 +67,17 @@ class QuestionRepositoryTest {
     void testSearchByTags_NoIntersection() {
         List<VerbalReasoningQuestion> noIntersectionQuestions = questionRepository.searchByTags(asList("tag1", "tag3"));
         assertTrue(noIntersectionQuestions.isEmpty());
+    }
+
+    @Test
+    void testSearchByTags_EmptyList() {
+        List<VerbalReasoningQuestion> emptyTagsQuestions = questionRepository.searchByTags(Collections.emptyList());
+        assertTrue(emptyTagsQuestions.isEmpty());
+    }
+
+    @Test
+    void testSearchByTags_Null() {
+        List<VerbalReasoningQuestion> nullTagsQuestions = questionRepository.searchByTags(null);
+        assertTrue(nullTagsQuestions.isEmpty());
     }
 }

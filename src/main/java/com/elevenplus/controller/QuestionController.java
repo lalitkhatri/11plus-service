@@ -14,6 +14,7 @@ import javax.annotation.PostConstruct;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 @RestController
 @RequestMapping("/api/questions")
@@ -53,4 +54,44 @@ public class QuestionController {
         Collections.shuffle(questionsByTag);
         return ResponseEntity.ok(questionsByTag);
     }
+
+    // GET endpoint to retrieve a random question
+    @GetMapping("/random")
+    public ResponseEntity<VerbalReasoningQuestion> getRandomQuestion() {
+        VerbalReasoningQuestion randomQuestion = questionRepository.getRandomQuestion();
+        return ResponseEntity.ok(randomQuestion);
+    }
+    // GET endpoint to retrieve a question by its ID
+    @GetMapping("/{id}")
+    public ResponseEntity<VerbalReasoningQuestion> getQuestionById(@PathVariable("id") String id) {
+        VerbalReasoningQuestion question = questionRepository.getQuestionById(id);
+        if (question != null) {
+            return ResponseEntity.ok(question);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+
+    // GET endpoint to retrieve questions by multiple tags
+    @GetMapping("/byTags")
+    public ResponseEntity<List<VerbalReasoningQuestion>> getQuestionsByTags(@RequestParam("tags") List<String> tags) {
+        List<VerbalReasoningQuestion> questionsByTags = questionRepository.searchByTags(tags);
+        Collections.shuffle(questionsByTags);
+        return ResponseEntity.ok(questionsByTags);
+    }
+    // GET endpoint to retrieve questions by multiple tags with a limit
+    @GetMapping("/byTagsWithLimit")
+    public ResponseEntity<List<VerbalReasoningQuestion>> getQuestionsByTagsWithLimit(
+            @RequestParam("tags") List<String> tags,
+            @RequestParam(value = "limit", defaultValue = "10") int limit) {
+        List<VerbalReasoningQuestion> questionsByTags = questionRepository.searchByTags(tags);
+        Collections.shuffle(questionsByTags);
+        if (limit > questionsByTags.size()) {
+            limit = questionsByTags.size();
+        }
+        return ResponseEntity.ok(questionsByTags.subList(0, limit));
+    }
+    
+
 }

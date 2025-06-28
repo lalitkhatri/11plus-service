@@ -27,7 +27,7 @@ class AuthenticationServiceImplTest {
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
-        authenticationService = new AuthenticationServiceImpl();
+        authenticationService = new AuthenticationServiceImpl(verifier);
     }
 
     @Test

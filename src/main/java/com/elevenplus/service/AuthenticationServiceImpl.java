@@ -21,6 +21,19 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     private static final HttpTransport transport = new NetHttpTransport();
     private static final String CLIENT_ID = "client-id";
 
+    private final GoogleIdTokenVerifier verifier;
+
+    public AuthenticationServiceImpl(GoogleIdTokenVerifier verifier) {
+        this.verifier = verifier;
+    }
+
+    // For production use (default constructor)
+    public AuthenticationServiceImpl() {
+        this(new GoogleIdTokenVerifier.Builder(transport, jsonFactory)
+                .setAudience(Collections.singletonList(CLIENT_ID))
+                .build());
+    }
+
     @Override
     public AuthSuccess authenticateWithGoogle(String idToken) throws IllegalArgumentException, GeneralSecurityException, IOException {
         if (idToken == null || idToken.isEmpty()) {
@@ -40,15 +53,12 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     private boolean verifyIdTokenWithGoogle(String idToken) throws GeneralSecurityException, IOException {
-         GoogleIdTokenVerifier verifier = new GoogleIdTokenVerifier.Builder(transport, jsonFactory)
-                 .setAudience(Collections.singletonList(CLIENT_ID))
-                 .build();
          GoogleIdToken googleIdToken = verifier.verify(idToken);
          if (googleIdToken == null) {
              return false;
          }
          GoogleIdToken.Payload payload = googleIdToken.getPayload();
-         String userId = payload.getSubject(); // Use this to get the user's ID
+         String userId = payload.getSubject();
 
         return true; // Assume token is valid for demonstration purposes
     }

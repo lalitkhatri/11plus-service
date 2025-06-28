@@ -18,20 +18,17 @@ public class GoogleAuthController {
         this.authenticationService = authenticationService;
     }
 
-    @PostMapping("/login")
+    @PostMapping("/login/google")
     public ResponseEntity<?> loginWithGoogle(@RequestBody Map<String, String> requestBody) {
         String idToken = requestBody.get("idToken");
-        if (idToken == null || idToken.isEmpty()) {
-            return ResponseEntity.badRequest().body(new Error(400, "ID token is required"));
+        if (idToken == null) {
+            return ResponseEntity.status(400).body(new Error(400, "ID token is required"));
         }
-
         try {
             AuthSuccess authSuccess = authenticationService.authenticateWithGoogle(idToken);
             return ResponseEntity.ok(authSuccess);
-        } catch (IllegalArgumentException e) {
-            return ResponseEntity.status(401).body(new Error(401, e.getMessage()));
         } catch (Exception e) {
-            return ResponseEntity.status(500).body(new Error(500, "Internal server error"));
+            return ResponseEntity.status(401).body(new Error(401, "Authentication failed"));
         }
     }
 }

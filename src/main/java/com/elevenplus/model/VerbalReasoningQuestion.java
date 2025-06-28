@@ -7,4 +7,5 @@ public class VerbalReasoningQuestion extends Question {
         this.setQuestionText(questionText);
         this.setTags(tags);
     }
+    public VerbalReasoningQuestion() {}
 }
